@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+pip-wheel-metadata/
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Pytest cache
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+*.env
+
+# MacOS
+.DS_Store
+
+# Docker
+*.tar
+*.img
+*.container
+docker-compose.override.yml
+
+# Python egg
+*.egg-info/
+*.egg
+
+# Build
+build/
+dist/
+*.egg-info/
+*.spec
+
+# OS / Editor junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
