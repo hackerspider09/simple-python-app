@@ -52,10 +52,7 @@ jobs:
       - name: ssh to ec2 and perform deploy operation
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 
-          echo "${{ secrets.EC2_USER }}"
-
-          # docker pull ${{ secrets.DOCKER_USERNAME }}/simple-python-app:latest
-          # docker stop server || true
-          # docker rm server || true
-          # docker run -d -p 5000:5000 --name server ${{ secrets.DOCKER_USERNAME }}/simple-python-app:latest 
-          # EOF
+          docker pull ${{ secrets.DOCKER_USERNAME }}/simple-python-app:latest
+          docker stop server || true
+          docker rm server || true
+          docker run -d -p 5000:5000 --name server ${{ secrets.DOCKER_USERNAME }}/simple-python-app:latest 
