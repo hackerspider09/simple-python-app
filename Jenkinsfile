@@ -9,6 +9,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
+            when {
+                branch 'dev'
+            }
             steps {
                 echo "Checkout to branch..."
                 git branch: 'dev', url: "${env.GITHUB_REPO}"
