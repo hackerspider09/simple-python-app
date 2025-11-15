@@ -17,3 +17,7 @@ def test_greet_custom():
         res = client.get('/?name=Prasad')
         assert res.status_code == 200
         assert res.json == {"message": "Hello, Prasad!"}
+
+def test_addition():
+    """A simple test to verify the testing framework is working."""
+    assert 1 + 1 == 10
