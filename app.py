@@ -21,5 +21,9 @@ def getHost():
 
     return jsonify(f"Hello Host name : {s}, Host addr : {ip_address}")
 
+@app.route('/version', methods=['GET'])
+def getVersion():
+    return jsonify(f"Crnt version: v1")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
