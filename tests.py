@@ -20,4 +20,4 @@ def test_greet_custom():
 
 def test_addition():
     """A simple test to verify the testing framework is working."""
-    assert 1 + 1 == 2
+    assert 1 + 1 == 10
